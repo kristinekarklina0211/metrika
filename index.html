@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Метрика</title>
+    <link rel="icon" href="./resources/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#">
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="resources/logo_mobile.png"
+              />
+              <img
+                class="header__logo"
+                src="resources/logo.png"
+                alt="Logo"
+              />
+            </picture>
+          </a>
+
+          <nav>
+            <ul class="header__nav">
+              <li><a class="header__nav-link" href="#about">About us</a></li>
+              <li><a class="header__nav-link" href="#projects">Projects</a></li>
+              <li><a class="header__nav-link" href="#services">Services</a></li>
+              <li><a class="header__nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <button class="js-burger-btn burger-btn"></button>
+        </div>
+      </div>
+
+      <div class="js-burger burger">
+        <div class="burger__content">
+          <img class="burger__logo" src="resources/logo.png" alt="Logo" />
+
+          <nav>
+            <ul class="burger__nav">
+              <li><a class="burger__nav-link" href="#about">About us</a></li>
+              <li><a class="burger__nav-link" href="#projects">Projects</a></li>
+              <li><a class="burger__nav-link" href="#services">Services</a></li>
+              <li><a class="burger__nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <ul class="js-burger__content burger__contacts">
+            <li>
+              <p class="burger__contacts-title">contact us:</p>
+            </li>
+            <li>
+              <a class="burger__contacts-phone" href="tel:+37120000000"
+                >+371 2000 0000</a
+              >
+            </li>
+            <li>
+              <a
+                class="burger__contacts-mail"
+                href="https://t.me/k_karklina"
+                target="_blank"
+                >k_karklina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="container">
+          <h1>Modern & Stylish Interiors for a Comfortable Life</h1>
+
+          <div class="hero__image">
+            <p class="hero__text">
+              We are a team of skilled designers and architects specialising in the creation and execution of interior design projects
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About us</h2>
+          <p class="about__text">
+            Founded in 2011, our studio is dedicated to the design and execution of interiors. Clients turn to us for comfort, tailored solutions, and functionality. We provide thoughtful, constructive solutions for every project, paying attention to every detail – always results-driven.
+          </p>
+          <a class="button button_small about__btn" href="#services"
+            >View services</a
+          >
+        </div>
+      </section>
+
+      <!-- Projects -->
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2>Projects</h2>
+
+          <ul class="projects__box-wrapper">
+            <li class="projects__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/projects-right_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/projects-right_tablet.png"
+                />
+                <img
+                  class="projects__box-image"
+                  src="resources/projects-right.png"
+                  alt="Living room with a large sofa and guitar"
+                />
+              </picture>
+
+              <h3 class="projects__box-title">
+                REGENCY HEIGHTS – 112 m² – 2025
+              </h3>
+
+              <a class="projects__box-link" href="/index.html">More details →</a>
+            </li>
+
+            <li class="projects__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/projects-norway_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/projects-norway_tablet.png"
+                />
+                <img
+                  class="projects__box-image"
+                  src="resources/projects-norway.png"
+                  alt="Living room with a sofa, coffee table, and TV"
+                />
+              </picture>
+
+              <h3 class="projects__box-title">
+                NORWOOD PARK RESIDENCES — 75 m² — 2025
+              </h3>
+
+              <a class="projects__box-link" href="/index.html">More details →</a>
+            </li>
+
+            <li class="projects__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/projects-lakes_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/projects-lakes_tablet.png"
+                />
+                <img
+                  class="projects__box-image"
+                  src="resources/projects-lakes.png"
+                  alt="Living room with a large table and staircase"
+                />
+              </picture>
+
+              <h3 class="projects__box-title">
+                PINEWOOD LAKES — 94 m² — 2024
+              </h3>
+
+              <a class="projects__box-link" href="/index.html">More details →</a>
+            </li>
+          </ul>
+
+          <a class="button button_full-width button_inverted" href=""
+            >View all projects</a
+          >
+        </div>
+      </section>
+
+      <!-- Services -->
+
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="services__title">Services</h2>
+
+          <ul class="services__box-wrapper">
+            <li class="services__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/services-pencil_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/services-pencil_tablet.png"
+                />
+                <img
+                  class="services__image"
+                  src="resources/services-pencil.png"
+                  alt="Pencil and drawing"
+                />
+              </picture>
+
+              <div class="services__price-wrapper">
+                <div class="services__price-box">
+                  <p class="services__price-text">from €30/m²</p>
+                </div>
+              </div>
+
+              <p class="services__subtitle">Planning solution</p>
+            </li>
+
+            <li class="services__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/services-colours_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/services-colours_tablet.png"
+                />
+                <img
+                  class="services__image"
+                  src="resources/services-colours.png"
+                  alt="Colour palette"
+                />
+              </picture>
+
+              <div class="services__price-wrapper">
+                <div class="services__price-box">
+                  <p class="services__price-text">from €35/m²</p>
+                </div>
+              </div>
+
+              <p class="services__subtitle">Design project</p>
+            </li>
+
+            <li class="services__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/services-hand_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/services-hand_tablet.png"
+                />
+                <img
+                  class="services__image"
+                  src="resources/services-hand.png"
+                  alt="Человек делает чертёж"
+                />
+              </picture>
+
+              <div class="services__price-wrapper">
+                <div class="services__price-box">
+                  <p class="services__price-text">from €350/month</p>
+                </div>
+              </div>
+
+              <p class="services__subtitle">Author's supervision</p>
+            </li>
+
+            <li class="services__box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/services-warehouse_mobile.png"
+                />
+                <source
+                  media="(max-width: 961px)"
+                  srcset="resources/services-warehouse_tablet.png"
+                />
+                <img
+                  class="services__image"
+                  src="resources/services-warehouse.png"
+                  alt="Склад с мебелью"
+                />
+              </picture>
+
+              <div class="services__price-wrapper">
+                <div class="services__price-box">
+                  <p class="services__price-text">5% of the cost</p>
+                </div>
+              </div>
+
+              <p class="services__subtitle">Furnishing</p>
+            </li>
+          </ul>
+
+          <!-- Pop-up -->
+
+          <button class="js-services__btn button button_full-width">
+            Order service
+          </button>
+
+          <div class="js-pop-up pop-up">
+            <div class="js-pop-up__content pop-up__content">
+              <!-- Order -->
+
+              <p class="order__title">Order service</p>
+
+              <p class="order__subtitle">
+                Please fill in the form, and we will get in touch with you within 24 hours
+              </p>
+
+              <form class="order__input">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </form>
+
+              <button class="button button_full-width button_small button_send">
+                Send
+              </button>
+
+              <div class="js-pop-up__close-btn pop-up__close-btn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2>Reviews</h2>
+
+          <ul class="reviews__row">
+
+            <li class="reviews__col">
+              <h3 class="reviews__name">Sophia, 75 m² project</h3>
+
+              <div class="reviews__box">
+                <p class="reviews__text">
+                  I would like to sincerely thank you for the work you did at such a high level! My husband and I really enjoyed working with you! Thank you for your ability to truly listen to your clients' wishes and deliver work that exceeds all expectations! We never imagined that someone could so effectively arrange everything we wanted (and more)!
+                </p>
+
+                <p class="reviews__text">
+                 You did this brilliantly! Now, we just need to bring the beauty you created into reality and share the results with you!
+                </p>
+              </div>
+            </li>
+
+            <li class="reviews__col">
+              <h3 class="reviews__name">Emma, 89 m² project</h3>
+
+              <div class="reviews__box">
+                <p class="reviews__text">
+                  Thank you so much for such an amazing project! Everything is stylish, cool, and well thought out! It was a pleasure working with you! We really appreciate your patience with our 'I want this, I want that' in search of the perfect renovation. It's wonderful that we found such a solid, responsible, and detail-oriented designer!
+                </p>
+
+                <p class="reviews__text">
+                  We can’t wait to bring the project to life and enjoy our modern, functional, and beautiful apartment! We will definitely recommend you to all our friends and family!
+                </p>
+              </div>
+            </li>
+
+            <li class="reviews__col">
+              <h3 class="reviews__name">Isabelle, 120 m² project</h3>
+
+              <div class="reviews__box">
+                <p class="reviews__text">
+                  I want to say a big thank you for the work you’ve done! Tom’s task was to develop the design project within a very tight timeline, and of course, I didn’t want to sacrifice the quality of the work. But my worries were unfounded: all issues were addressed promptly, multiple solutions were always offered, and you provided helpful comments on which option would be the most suitable.
+                </p>
+
+                <p class="reviews__text">
+                  In the end, the project was completed on time, and I can't wait to start bringing it to life! The design is very stylish and modern! I’ll be recommending you to anyone who is about to embark on the challenging task of renovation!
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+
+      <section>
+        <div class="gallery">
+          <div class="gallery__title-wrapper">
+            <div class="container">
+              <h2 class="gallery__title">Project gallery</h2>
+            </div>
+          </div>
+
+          <div class="gallery__slides">
+            <div class="gallery__slide gallery__slide_active">
+              <div class="gallery__box gallery__box-forest">
+                <div class="gallery__text-wrapper">
+                  <div class="container">
+                    <p class="gallery__text">
+                      Two-bedroom apartment project at Riverside View Residences
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__slide">
+              <div class="gallery__box gallery__box-lighthouse">
+                <div class="gallery__text-wrapper">
+                  <div class="container">
+                    <p class="gallery__text">Living room design at Harbour Point Residences</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__slide">
+              <div class="gallery__box gallery__box-private">
+                <div class="gallery__text-wrapper">
+                  <div class="container">
+                    <p class="gallery__text">
+                      Kitchen-living room visualisation for a private house
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__slide">
+              <div class="gallery__box gallery__box-north">
+                <div class="gallery__text-wrapper">
+                  <div class="container">
+                    <p class="gallery__text">
+                      Scandinavian-style kitchen design for Northern Breeze Apartments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__controls-wrapper">
+              <div class="container">
+                <div class="gallery__controls">
+                  <button
+                    class="gallery__control gallery__control-prev"
+                  ></button>
+                  <button
+                    class="gallery__control gallery__control-next"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Contacts</h2>
+
+          <ul class="contacts__box">
+            <li>
+              <a class="contacts__phone" href="tel:+37120000000"
+                >+371 2000 0000</a
+              >
+            </li>
+            <li>
+              <a
+                class="contacts__mail"
+                href="mailto:kristine.karklina11@gmail.com"
+                target="_blank"
+                >example@mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <nav>
+            <ul class="footer__nav">
+              <li><a class="footer__nav-link" href="#about">About us</a></li>
+              <li><a class="footer__nav-link" href="#projects">Projects</a></li>
+              <li><a class="footer__nav-link" href="#services">Services</a></li>
+              <li><a class="footer__nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <p class="footer__copyright">
+            Interior design studio "Metrika" – 2025
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+
+    <script src="popup.js"></script>
+
+    <script src="burger.js"></script>
+  </body>
+</html>
